@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0e0e10;
+  color: #f5f5f5;
+}
+
+header {
+  background: #1a1a1d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+header h1 {
+  color: #4dabf7;
+  margin: 0;
+  font-size: 1.8em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #4dabf7;
+}
+
+main {
+  padding: 2em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 1em;
+  background: linear-gradient(to right, #4dabf7, #42a5f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  text-align: center;
+  color: #ccc;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 3em;
+}
+
+.boton {
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.boton:hover {
+  background-color: #1d4ed8;
+}
+
+.tarjeta {
+  background-color: #1e1e22;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1em;
+  display: inline-block;
+  width: 250px;
+  vertical-align: top;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  color: white;
+  transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.03);
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.etiqueta {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.etiqueta.nuevo { background-color: #7c3aed; color: white; }
+.etiqueta.descuento { background-color: #ef4444; color: white; }
+.etiqueta.popular { background-color: #10b981; color: white; }
+
+footer {
+  text-align: center;
+  padding: 2em;
+  background: #1a1a1d;
+  color: #888;
+  margin-top: 3em;
+}
+
+.tarjeta.clickable {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta.clickable:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(66, 153, 225, 0.4);
+}
+
+.imagen-detalle {
+  max-width: 300px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
